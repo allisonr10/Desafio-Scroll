@@ -53,8 +53,8 @@
                     <header class="content-header">
                         <h2>Titulo do article</h2>
                     </header>
-                    <p>Paragrafo 1</p>
-                    <p>Paragrafo 2</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolore dolores natus quia unde incidunt enim ea soluta exercitationem aliquam. Veniam ab suscipit blanditiis cum odit! Autem cum alias blanditiis, aspernatur dignissimos excepturi et aliquam a ducimus reprehenderit laudantium perferendis reiciendis exercitationem cumque fugiat eligendi, labore ullam quis laborum consectetur. Suscipit iure expedita tempora illum voluptatibus provident ipsam consectetur natus est delectus dolor aut repellendus saepe deserunt adipisci soluta in nam ad error, quidem ea voluptas illo. Ipsam exercitationem perferendis distinctio illum placeat voluptas deserunt dolorum cupiditate, accusamus, expedita nesciunt necessitatibus. Itaque maiores officia recusandae minus expedita libero repellendus laborum ex repudiandae est a, perspiciatis dolorem sit veniam! Repellendus repudiandae doloribus placeat sit a, doloremque quisquam accusantium magnam delectus fugit, at veniam molestiae suscipit? Voluptatum corporis aperiam recusandae quod! Dolores sapiente, ea vel dolor possimus repellendus id amet laudantium dolorum! Et nemo excepturi sit, ipsa molestias sequi doloremque, ea, eaque nam sed maiores iste. Dignissimos modi ducimus placeat et voluptatem earum quaerat reiciendis autem esse delectus illum commodi minus eos unde nostrum iste exercitationem, tempore sequi non obcaecati at molestias dolores cum. Ea, harum fugiat. Consequuntur laborum delectus fuga debitis, vel, neque aliquam, sapiente enim dolor repellendus quos odio eius.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, unde neque earum voluptatibus sapiente laboriosam voluptas facilis, accusantium ullam, necessitatibus repellendus! Facere architecto eaque reprehenderit laboriosam id, non libero dolor cumque laborum cupiditate alias ab, modi iure placeat! Hic sunt quia, fugit officia voluptate rem neque magnam optio sequi incidunt cupiditate voluptatibus maxime ex, earum ducimus esse. Officiis illo, repellat mollitia nesciunt accusamus temporibus unde sequi assumenda quaerat voluptates tempora id ratione voluptatibus quam eligendi atque nulla dolorum quo nisi excepturi cumque qui praesentium. Illo, ullam. Quasi alias ullam reiciendis id et voluptatum similique optio ducimus quaerat. Necessitatibus maiores voluptate quisquam magnam quas impedit ea consequatur suscipit eaque esse nesciunt, nulla inventore enim maxime ducimus dolorem repudiandae, saepe eius officia repellendus aliquam quia molestias dolor quaerat. Et est asperiores fuga magni, aliquam voluptatem, ullam fugiat aperiam magnam tempora totam mollitia placeat ducimus illo aspernatur eius atque possimus iste, esse laudantium optio illum debitis quam. Aperiam distinctio consequatur dolor animi? Blanditiis, quam voluptatum dolorem nam deleniti saepe nihil delectus, soluta eligendi quisquam quidem illum quasi labore, id distinctio. Architecto pariatur eos nihil saepe totam minima suscipit unde, quos laudantium maiores libero facilis, qui accusantium at doloremque magni dolores velit maxime voluptatum temporibus. Repellat voluptatum exercitationem illum accusantium ratione, placeat at animi quisquam atque totam, assumenda eveniet, aliquam ipsam ea veritatis? Repellendus accusantium asperiores repellat aliquid qui quisquam expedita delectus dolore ullam saepe exercitationem, animi incidunt? Iusto vero, fugiat, minima animi repudiandae neque eaque aperiam, eum at nihil exercitationem possimus vitae aut? Animi illo excepturi deserunt cum tempore a nesciunt unde deleniti ipsa quo? Ipsam magni iure, itaque fuga obcaecati id vel cupiditate laboriosam officiis voluptates consequuntur, quaerat sint provident vitae consequatur vero, velit exercitationem sunt. Provident commodi quam assumenda neque modi fugit nesciunt asperiores in molestias sapiente, perspiciatis, unde quidem.</p>
                 </article>
             </section>
 
@@ -69,9 +69,20 @@
 
     <script>
 
-        (function () {
+        window.addEventListener('scroll', function(){
+            let posicaoY = window.pageYOffset
+            console.log(posicaoY)
+            if(posicaoY > 250){
+                const elemento = document.querySelector('body')
+                elemento.classList.add('fx')
+            }else{
+                const elemento = document.querySelector('body')
+                elemento.classList.remove('fx')
+        }
+        })
+        
             
-        })()
+        
 
 
     </script>
